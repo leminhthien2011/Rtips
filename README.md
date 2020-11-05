@@ -15,3 +15,13 @@ install_github("leminhthien2011/CONETTravel", dependencies=TRUE)
 
 library(CONETTravel)
 
+4. Search all objects in a package
+
+lsf.str("package:CONETTravel") #This gives all function and argument
+
+ls("package:CONETTravel") # This gives all names only
+
+help(package = "CONETTravel") # This gives a complete picture
+
+
+
