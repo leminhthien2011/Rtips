@@ -9,6 +9,8 @@ Rtip
 
 3. Remove and install from git
 
+remove.packages("CONETTravel")
+
 library(devtools)
 
 install_github("leminhthien2011/CONETTravel", dependencies=TRUE)
