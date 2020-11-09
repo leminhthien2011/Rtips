@@ -25,5 +25,15 @@ ls("package:CONETTravel") # This gives all names only
 
 help(package = "CONETTravel") # This gives a complete picture
 
+5. loop of list
+countries = list()
+countries[[1]] = country1
+countries[[2]] = country2
+countries[[3]] = country3
+for (i in 1:length(countries)){
+  tmp = countries[[i]]
+  pop = popfunc(tmp)
+  countries[[i]] = list.append(countries[[i]], pop = pop)
+}
 
 
