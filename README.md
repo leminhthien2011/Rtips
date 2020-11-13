@@ -36,4 +36,23 @@ for (i in 1:length(countries)){
   countries[[i]] = list.append(countries[[i]], pop = pop)
 }
 
+6. Print things with names in order
 
+for(i in 1:3){
+  assign( paste("country", i, sep=""), 10) #countryi = 10
+  print(i)
+  print( get( paste("country", i, sep="") ) ) #print(countryi)
+}
+
+####################
+
+country1 = list(P=10, data=c(1,2,3,4))
+
+country2 = list(P=09, data=c(1,2,3,1000))
+
+
+sum(country1$data)
+
+for(i in 1:2){
+   print ( sum( get( paste("country", i, sep="") )$data ) )
+}
