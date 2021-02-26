@@ -56,3 +56,13 @@ sum(country1$data)
 for(i in 1:2){
    print ( sum( get( paste("country", i, sep="") )$data ) )
 }
+
+6. Time data: Create a sequence of time by days, years, quarters...
+seq(as.Date("2020/01/22"),as.Date("2020/06/30"),"days")
+
+7. Make a seuquence of last 10 days up to 04/30/2020
+rev(seq(as.Date("2020-04-30"), length =  10, by = "-1 day"))
+
+8. 
+
+
