@@ -65,6 +65,9 @@ seq(as.Date("2020/01/22"),as.Date("2020/06/30"),"days")
 
 rev(seq(as.Date("2020-04-30"), length =  10, by = "-1 day"))
 
-8. 
+8. download .Rdata and check which variables available in *.Rdata
+
+load("file1.Rdata")
+ls()
 
 
