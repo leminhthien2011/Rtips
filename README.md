@@ -70,4 +70,22 @@ rev(seq(as.Date("2020-04-30"), length =  10, by = "-1 day"))
 load("file1.Rdata")
 ls()
 
+9. Ifelse nested
+
+for(i in 1:inp$duration)
+{
+if (i<inp$changepoint[1]){
+  print(paste("This 1"))
+} else if (inp$changepoint[1]<= i & i< inp$changepoint[2]) {
+  print(paste("This 2"))
+  } else if (inp$changepoint[2]<= i & i<inp$changepoint[3]) {
+  print(paste("This 3"))
+} else if (inp$changepoint[3]<= i & i<inp$changepoint[4]) {
+  print(paste("This 4"))
+} else {
+  print(paste("This 5"))
+}
+}
+
+
 
