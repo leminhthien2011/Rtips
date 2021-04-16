@@ -87,5 +87,8 @@ if (i<inp$changepoint[1]){
 }
 }
 
+10. Check the status of main packages of our current Rversion
+     
+     Info.System()
 
 
